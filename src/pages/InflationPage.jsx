@@ -5,6 +5,7 @@ import InputField from '../components/InputField'
 import ResultPanel from '../components/ResultPanel'
 import ExplanationSection from '../components/ExplanationSection'
 import { fmt, pct, parseNum } from '../utils/format'
+import AdPlaceholder from '../components/AdPlaceholder'
 
 export default function InflationPage() {
   const [currentVal, setCurrentVal] = useState('')
@@ -157,6 +158,8 @@ export default function InflationPage() {
             about PKR 57,000 in today's terms.
           </p>
         </ExplanationSection>
+
+        <AdPlaceholder />
 
         <div className="disclaimer mt-24">
           <strong>Disclaimer:</strong> Calculations assume a constant
