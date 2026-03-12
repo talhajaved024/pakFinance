@@ -4,6 +4,7 @@ import SEOHead from '../components/SEOHead'
 import InputField from '../components/InputField'
 import ResultPanel from '../components/ResultPanel'
 import { fmt, parseNum } from '../utils/format'
+import AdPlaceholder from '../components/AdPlaceholder'
 
 export default function SalaryBreakupPage() {
   const [basic, setBasic] = useState('')
@@ -144,6 +145,8 @@ export default function SalaryBreakupPage() {
             ]}
           />
         )}
+
+        <AdPlaceholder />
 
         <div className="disclaimer mt-24">
           <strong>Note:</strong> This is a simplified breakup estimator.
