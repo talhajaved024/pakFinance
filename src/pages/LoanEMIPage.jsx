@@ -6,6 +6,7 @@ import Toggle from '../components/Toggle'
 import ResultPanel from '../components/ResultPanel'
 import ExplanationSection from '../components/ExplanationSection'
 import { fmt, pct, parseNum } from '../utils/format'
+import AdPlaceholder from '../components/AdPlaceholder'
 
 export default function LoanEMIPage() {
   const [principal, setPrincipal] = useState('')
@@ -204,6 +205,8 @@ export default function LoanEMIPage() {
             months.
           </p>
         </ExplanationSection>
+
+        <AdPlaceholder />
 
         <div className="disclaimer mt-24">
           <strong>Disclaimer:</strong> EMI calculations are approximate.
