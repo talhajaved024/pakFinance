@@ -6,6 +6,7 @@ import ResultPanel from '../components/ResultPanel'
 import { fmtDec, fmt, parseNum } from '../utils/format'
 import { useExchangeRates, CURRENCY_NAMES } from '../hooks/useExchangeRates'
 import CurrencyTicker from '../components/CurrencyTicker'
+import AdPlaceholder from '../components/AdPlaceholder'
 
 export default function CurrencyPage() {
   const [amount, setAmount] = useState('1000')
@@ -295,6 +296,8 @@ export default function CurrencyPage() {
             Showing approximate offline rates. Click "Refresh Rates" to retry.
           </div>
         )}
+
+        <AdPlaceholder />
 
         <div className="disclaimer mt-24">
           <strong>Rates source:</strong> ExchangeRate-API (exchangerate-api.com).
